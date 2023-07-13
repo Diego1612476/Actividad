@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concesionaria de Autos</title>
+    
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .container{
+            display: flex;
+        }
+        .section{
+            width: 50%;
+        }
+        .titulo{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Concesionaria de vehiculos</h1>
+<div class="container"> 
+    <section class="section"> 
+    <h2>Cotización </h2>
+    <div>
+    <label for="ci">CI:</label>
+    <input type="text" id="ci">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre">
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido">
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion">
+
+    <label for="vehiculo">Vehículo:</label>
+    <select id="vehiculo">
+        <option value="fiesta">Ford Fiesta</option>
+        <option value="focus">Ford Focus</option>
+    </select>
+
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio">
+
+    <button onclick="generarCotizacion()">Cotizar</button>
+    </div>
+    </section>
+
+    <section class="section"> 
+    <h2>Contabilidad</h2>
+    <div>
+    <label for="nombreEmpleado">Nombre del Empleado:</label>
+    <input type="text" id="nombreEmpleado">
+    <label for="cargoEmpleado">Cargo del Empleado:</label>
+    <select id="cargoEmpleado">
+        <option value="administrativo">Administrativo</option>
+        <option value="supervisor">Supervisor</option>
+        <option value="operario">Operario</option>
+        <option value="controlCalidad">Control de Calidad</option>
+    </select>
+
+    <label for="sueldoBase">Sueldo:</label>
+    <input type="number" id="sueldoBase">
+
+    <label for="horasExtras">Horas Extras:</label>
+    <input type="number" id="horasExtras">
+
+    <button onclick="generarPagos()">Generar Pagos</button>
+    </div>
+    </section>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
